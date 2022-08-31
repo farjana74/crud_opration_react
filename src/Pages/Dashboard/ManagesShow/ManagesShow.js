@@ -29,6 +29,8 @@ const ManagesShow = () => {
     if (error) return <div>failed to load</div>
     if (!data) return <div>loading...</div>
 
+
+
     // deleteted event------------------
 
     const handleDeleteOrder = id => {
@@ -55,11 +57,9 @@ const ManagesShow = () => {
 
                 <thead className='table-header'>
                     <tr className='text-center'>
-                        {/* <th className='py-3' scope="col" width="50">ID</th> */}
                         <th className='py-3 ' scope="col"> Event Name</th>
                         <th className='py-3 text-center' scope="col">Rj Name</th>
                         <th className='py-3 text-center' scope="col">Event Time</th>
-                        {/* <th className='py-3 text-center' scope="col">Event Image</th> */}
                         <th className='py-3 text-center' scope="col">Event Duration</th>
                         <th className='py-3 text-center' scope="col">Total Views</th>
 
@@ -75,7 +75,6 @@ const ManagesShow = () => {
                             <td className='text-center'>{more?.name}</td>
                             <td className='text-center'>{more?.rj_name}</td>
                             <td className='text-center'>{more?.time}</td>
-                            {/* <td className='text-center'><img className='table-img' src={more?.img} alt="" /></td> */}
                             <td className='text-center'>{more?.duration} min</td>
                             <td className='text-center'>{more?.views}</td>
                             <td className=''>

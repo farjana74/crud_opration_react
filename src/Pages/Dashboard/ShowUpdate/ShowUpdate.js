@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, {
+  useEffect,
+  useState,
+} from 'react';
+
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
-import axios from 'axios';
 
 const ShowUpdate = () => {
     const { register, handleSubmit, reset } = useForm();
@@ -64,6 +67,7 @@ const ShowUpdate = () => {
 
     }, [])
 
+    // data updated------
 
     const handleUpdateChange = (e) => {
         const url = `https://mighty-tor-25393.herokuapp.com/services/${showId}`;
